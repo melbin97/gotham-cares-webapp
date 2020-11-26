@@ -6,6 +6,11 @@ namespace GothamCares.Entity
 {
     class Outlet
     {
-        public string 
+        public string Id { get; set; }
+        public string Name { get; set; }
+        public string StreetName { get; set; }
+        public string Landmark { get; set; }
+        public int ReqVolunteers { get; set; }
+        public List<Food> Foods { get; set; }
     }
 }
