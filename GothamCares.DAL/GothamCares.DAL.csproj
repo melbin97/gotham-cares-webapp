@@ -1,0 +1,13 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\GothamCares.BLL\GothamCares.BLL.csproj" />
+    <ProjectReference Include="..\GothamCares.Entity\GothamCares.Entity.csproj" />
+    <ProjectReference Include="..\GothamCares.Web\GothamCares.Web.csproj" />
+  </ItemGroup>
+
+</Project>
