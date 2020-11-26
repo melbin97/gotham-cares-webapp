@@ -4,8 +4,4 @@
     <TargetFramework>netstandard2.0</TargetFramework>
   </PropertyGroup>
 
-  <ItemGroup>
-    <ProjectReference Include="..\GothamCares.Web\GothamCares.Web.csproj" />
-  </ItemGroup>
-
 </Project>

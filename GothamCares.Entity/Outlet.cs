@@ -6,5 +6,6 @@ namespace GothamCares.Entity
 {
     class Outlet
     {
+        public string 
     }
 }
