@@ -4,7 +4,7 @@ using System.Text;
 
 namespace GothamCares.Entity
 {
-    class Outlet
+    public class Outlet
     {
         public string Id { get; set; }
         public string Name { get; set; }

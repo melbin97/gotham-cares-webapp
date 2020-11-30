@@ -4,7 +4,7 @@ using System.Text;
 
 namespace GothamCares.Entity
 {
-    class Admin
+    public class Admin
     {
         public string UserName { get; set; }
         public string Password { get; set; }

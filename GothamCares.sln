@@ -3,13 +3,13 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.30711.63
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GothamCares.Web", "GothamCares.Web\GothamCares.Web.csproj", "{47C70625-8ACE-4AD5-981C-A393E84D85B2}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "GothamCares.Web", "GothamCares.Web\GothamCares.Web.csproj", "{47C70625-8ACE-4AD5-981C-A393E84D85B2}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GothamCares.Entity", "GothamCares.Entity\GothamCares.Entity.csproj", "{33100E93-4FFF-4783-83D8-6765F5DF6385}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "GothamCares.Entities", "GothamCares.Entity\GothamCares.Entities.csproj", "{33100E93-4FFF-4783-83D8-6765F5DF6385}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GothamCares.DAL", "GothamCares.DAL\GothamCares.DAL.csproj", "{C318BFFD-8E77-4075-B1D7-24C379563C2B}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "GothamCares.DAL", "GothamCares.DAL\GothamCares.DAL.csproj", "{C318BFFD-8E77-4075-B1D7-24C379563C2B}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GothamCares.BLL", "GothamCares.BLL\GothamCares.BLL.csproj", "{395400DA-3A99-450A-97E4-E8106F1EDC1E}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "GothamCares.BLL", "GothamCares.BLL\GothamCares.BLL.csproj", "{395400DA-3A99-450A-97E4-E8106F1EDC1E}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

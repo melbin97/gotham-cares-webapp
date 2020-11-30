@@ -6,7 +6,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\GothamCares.BLL\GothamCares.BLL.csproj" />
-    <ProjectReference Include="..\GothamCares.Entity\GothamCares.Entity.csproj" />
+    <ProjectReference Include="..\GothamCares.Entity\GothamCares.Entities.csproj" />
   </ItemGroup>
 
 </Project>
