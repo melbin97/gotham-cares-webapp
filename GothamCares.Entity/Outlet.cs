@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace GothamCares.Entity
+namespace GothamCares.Entities
 {
     public class Outlet
     {

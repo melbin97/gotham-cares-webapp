@@ -1,7 +1,7 @@
 ﻿using System;
-using GothamCares.Entity.Enums;
+using GothamCares.Entities.Enums;
 
-namespace GothamCares.Entity
+namespace GothamCares.Entities
 {
     public class Food
     {

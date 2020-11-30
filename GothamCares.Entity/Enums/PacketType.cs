@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace GothamCares.Entity.Enums
+namespace GothamCares.Entities.Enums
 {
     public enum PacketType
     {
