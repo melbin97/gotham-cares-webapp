@@ -1,4 +1,6 @@
-﻿using GothamCares.Entity;
+﻿using GothamCares.DAL;
+using GothamCares.DAL.Contracts;
+using GothamCares.Entity;
 using System;
 using System.Collections.Generic;
 using System.Text;
@@ -6,26 +8,29 @@ using System.Threading.Tasks;
 
 namespace GothamCares.BLL
 {
-    public class OutletBLL
+    public interface IOutletBLL
     {
+        Task<List<Outlet>> GetAllOutlets();
+    }
+
+    public class OutletBLL : IOutletBLL
+    {
+        private readonly IOutletDac dac;
+
+        public OutletBLL(IOutletDac dac)
+        {
+            this.dac = dac;
+        }
+
+
         /// <summary>
         /// Gets a list of all outlets
         /// </summary>
         /// <returns>List of outlets</returns>
         public async Task<List<Outlet>> GetAllOutlets()
         {
-            // change this to get from DB using EF.
-
-            List<Outlet> outlets = new List<Outlet>()
-            {
-                new Outlet{Id="1", Name="Surya"},
-                new Outlet{Id="2", Name="Nikitha"},
-                new Outlet{Id="3", Name="Maju"}
-            };
-            
-            return await Task.FromResult(outlets);
+            var outlets = await dac.GetAllOutlets();
+            return outlets;
         }
-
-
     }
 }

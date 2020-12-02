@@ -1,3 +1,6 @@
+using GothamCares.BLL;
+using GothamCares.DAL;
+using GothamCares.DAL.Contracts;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.HttpsPolicy;
@@ -23,6 +26,16 @@ namespace GothamCares.Web
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
+            // Configure the DI for GothamCare
+            //services.AddTransient();
+            //services.AddSingleton();
+
+
+
+            services.AddScoped<IOutletDac, PostgresOutletDac>();
+            services.AddScoped<IOutletBLL, OutletBLL>();
+
+
             services.AddControllersWithViews();
         }
 

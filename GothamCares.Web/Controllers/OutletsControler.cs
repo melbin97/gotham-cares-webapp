@@ -1,4 +1,5 @@
 ﻿using GothamCares.BLL;
+using GothamCares.DAL;
 using GothamCares.Entity;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
@@ -12,12 +13,18 @@ namespace GothamCares.Web.Controllers
     [ApiController]
     public class OutletsControler : ControllerBase
     {
+        readonly IOutletBLL bll;
+
+        public OutletsControler(IOutletBLL outletBLL)
+        {
+            bll = outletBLL;
+        }
+
         [HttpGet]
         [Route("api/outlets")]
         public async Task<IActionResult> GetOutlets()
-        {
-            OutletBLL outletBLL = new OutletBLL();
-            var outlets = await outletBLL.GetAllOutlets();
+        {            
+            var outlets = await bll.GetAllOutlets();
 
             return Ok(outlets);
         }
